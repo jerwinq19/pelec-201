@@ -1,12 +1,12 @@
-body {
-    height: 200vh;
-}
+
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: auto;
+    padding-bottom: 2rem;
     margin: 0rem 3rem;
+
 }
 
 .container p {
@@ -34,8 +34,8 @@ body {
 
 /* image responsiveness */
 .hero-ctn {
-    width: 100%;
-    height: auto;
+    width: 90vw;
+    height: 100%;
 }
 
 .hero-ctn img {
@@ -99,11 +99,22 @@ body {
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
 
     .container {
-        margin: 0rem 1rem;
+        margin: 0rem 2rem;
     }
+
+    .hero-ctn {
+        width: 100%;
+        height: 100%;
+    }
+
+    .hero-ctn img {
+        width: 100%;
+        height: 100%;
+    }
+
 
     .hero-text {
         justify-content: center;
@@ -114,11 +125,19 @@ body {
     }
     .hero-text p {
         width: 100%;
+        font-size: 1rem;
     }
+
+    .hero-text a, .container a {
+        font-size: 1rem;
+    }
+
 
     /* middle */
     .about {
-        font-size: 2.5rem;
+        font-size: 2rem;
+        margin: 1rem 0rem;
+        margin-right: auto;
     }
 
     .middle {
@@ -138,7 +157,82 @@ body {
 
     .middle p {
         width: 100%;
+        margin: 0.5rem 0.5rem;
         font-size: 1rem;
+    }
+
+    .learn-more {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .container {
+        margin: 0rem 2rem;
+    }
+
+    .hero-ctn {
+        width: 100%;
+        height: auto;
+    }
+
+    .hero-ctn img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+    }
+
+
+    .hero-text {
+        justify-content: center;
+        flex-direction: column;
+    }
+    .title {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .hero-text p {
+        width: 100%;
+        font-size: 1.2rem;
+    }
+
+    .hero-text a, .container a {
+        font-size: 1rem;
+    }
+
+
+    /* middle */
+    .about {
+        font-size: 2.5rem;
+        margin: 1rem 0rem;
+        margin-right: auto;
+    }
+
+    .middle {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .mid-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .mid-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+    }
+
+
+    .middle p {
+        width: 100%;
+        margin: 0.5rem 0.5rem;
+        font-size: 1.2rem;
     }
 
     .learn-more {

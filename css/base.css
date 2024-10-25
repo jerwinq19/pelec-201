@@ -218,15 +218,15 @@ li.dropdown {
 }
 
 /* Responsive Styles */
-@media (max-width: 500px) {
+@media (max-width: 480px) {
     .buttons ul {
         display: none; /* Hide buttons on small screens */
         flex-direction: column; /* Stack vertically */
         align-items: flex-start;
         width: 100%; /* Full width */
-        background-color: var(--light-brown);
+        background-color: var(--dark-brown);
         position: absolute;
-        top: 70px; /* Adjust based on your navbar height */
+        top: 60px; /* Adjust based on your navbar height */
         left: 0;
         padding: 1.5rem 2rem; /* Padding for the dropdown */
     }
@@ -242,6 +242,49 @@ li.dropdown {
         margin-left: auto;
         display: flex; /* Show the burger menu */
     }
+
+    .logo a{
+        font-size: 2rem;
+    }
+
+    .buttons a {
+        color: var(--light-brown);
+    }
+
 }
 
-/*  */
+
+@media (max-width: 768px) {
+    .buttons ul {
+        display: none; /* Hide buttons on small screens */
+        flex-direction: column; /* Stack vertically */
+        align-items: flex-start;
+        width: 100%; /* Full width */
+        background-color: var(--dark-brown);
+        position: absolute;
+        top: 60px; /* Adjust based on your navbar height */
+        left: 0;
+        padding: 1.5rem 2rem; /* Padding for the dropdown */
+    }
+
+    .buttons.active ul {
+        display: flex; /* Show buttons when active */
+    }
+
+    .top-nav a {
+        margin-left: 2px;
+    }
+    .navbar-toggle {
+        margin-left: auto;
+        display: flex; /* Show the burger menu */
+    }
+
+    .logo a{
+        font-size: 2rem;
+    }
+
+    .buttons a {
+        color: var(--light-brown);
+    }
+
+}
