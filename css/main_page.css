@@ -101,12 +101,11 @@
 }
 
 
-
-
 @media (max-width: 480px) {
 
     .container {
-        margin: 0rem 2rem;
+        margin: 0rem 1rem !important;
+        padding: 1rem 0rem !important;
     }
 
     .hero-ctn {
@@ -160,10 +159,10 @@
         object-fit: contain !important;
     }
 
-    .middle p {
+    .middle p, .hero-text p{
         width: 100%;
         margin: 0.5rem 0.5rem;
-        font-size: 3.5vw !important;
+        font-size: 3.2vw !important;
     }
 
     .learn-more {
@@ -177,7 +176,8 @@
 @media (max-width: 768px) {
 
     .container {
-        margin: 0rem 2rem;
+        margin: 0rem 1rem !important;
+        padding: 1rem 0rem !important;
     }
 
     .hero-ctn {

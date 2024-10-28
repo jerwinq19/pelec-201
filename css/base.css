@@ -253,7 +253,6 @@ li.dropdown {
 
 }
 
-
 @media (max-width: 820px) {
     .buttons ul {
         display: none; /* Hide buttons on small screens */
