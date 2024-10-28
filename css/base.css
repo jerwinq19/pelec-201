@@ -254,7 +254,7 @@ li.dropdown {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 820px) {
     .buttons ul {
         display: none; /* Hide buttons on small screens */
         flex-direction: column; /* Stack vertically */
