@@ -243,8 +243,15 @@ li.dropdown {
         display: flex; /* Show the burger menu */
     }
 
+    .navbar-toggle span {
+        height: 3px;
+        width: 25px;
+        background-color: var(--dark-brown);
+        margin: 3px 0;
+    }
+
     .logo a{
-        font-size: 2rem;
+        font-size: 7vw !important;
     }
 
     .buttons a {
@@ -278,8 +285,15 @@ li.dropdown {
         display: flex; /* Show the burger menu */
     }
 
+    .navbar-toggle span {
+        height: 3px;
+        width: 25px;
+        background-color: var(--dark-brown);
+        margin: 3px 0;
+    }
+
     .logo a{
-        font-size: 2rem;
+        font-size: 4vw !important;
     }
 
     .buttons a {
