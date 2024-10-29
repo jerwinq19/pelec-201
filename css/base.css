@@ -3,7 +3,7 @@
 @import url('main_page.css');
 @import url('main-about.css');
 @import url('contact.css');
-
+@import url('footer.css');
 
 /* VARIABLES */
 :root {
@@ -45,7 +45,7 @@ body {
 
 .logo a {
     font-family: var(--abril);
-    font-size: 3rem;
+    font-size: 2rem;
     margin-left: 2rem;
     text-decoration: none;
     color: var(--dark-brown);
@@ -140,7 +140,7 @@ li.dropdown {
         width: 100%; /* Full width */
         background-color: var(--dark-brown);
         position: absolute;
-        top: 60px; /* Adjust based on your navbar height */
+        top: 50px !important; /* Adjust based on your navbar height */
         left: 0;
         padding: 1.5rem 2rem; /* Padding for the dropdown */
     }
@@ -166,6 +166,10 @@ li.dropdown {
 
     .buttons a {
         color: var(--light-brown);
+    }
+
+    .logo a {
+        font-size: 1.5rem !important;
     }
 
 }
@@ -178,7 +182,7 @@ li.dropdown {
         width: 100%; /* Full width */
         background-color: var(--dark-brown);
         position: absolute;
-        top: 60px; /* Adjust based on your navbar height */
+        top: 50px !important; /* Adjust based on your navbar height */
         left: 0;
         padding: 1.5rem 2rem; /* Padding for the dropdown */
     }
@@ -190,6 +194,7 @@ li.dropdown {
     .top-nav a {
         margin-left: 2px;
     }
+
     .navbar-toggle {
         margin-left: auto;
         display: flex; /* Show the burger menu */
@@ -202,12 +207,11 @@ li.dropdown {
         margin: 3px 0;
     }
 
-    .logo a{
-        font-size: 1.5rem !important;
-    }
-
     .buttons a {
         color: var(--light-brown);
     }
 
+    .logo a {
+        font-size: 2rem; /* Adjust this if needed for mobile */
+    }
 }
