@@ -14,12 +14,16 @@ span {
 .footer-ctn {
     display: flex;
     justify-content: space-between;
+    gap: 5rem;
 }
+
+
 
 .col-1 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-right: auto;
 }
 
 .footer-title {
@@ -90,25 +94,25 @@ span {
     .footer-ctn {
         flex-wrap: wrap;
         max-width: fit-content;
-        gap: 0.5rem;
+        gap: 2.3rem !important;
     }
 
     .footer-title {
-        font-size: 2.3rem;
+        font-size: 1.8rem !important;
     }
 
     .footer-disc {
-        font-size: 1rem;
+        font-size: 0.9rem !important;
     }
 
-    .icons img, .icons a{
-        width: auto;
-        align-items: center;
-        height: 30px;
-    }
+    .icons img, .icons a {
+     width: auto;
+     align-items: baseline;
+     height: 1.5rem !important;
+     }
 
     .col-2 span, .col-3 span {
-        font-size: 1.5rem;
+        font-size: 1rem;
         font-family: var(--lato);
         font-weight: 500;
     }
@@ -125,12 +129,20 @@ span {
         border-bottom: 1.5px solid var(--light-brown) !important;
     }
 
+    .credits {
+     font-size: 0.8rem;
+    }
+
 }
 
 
 @media (max-width: 768px) {
     .footer-title {
         font-size: 2rem;
+    }
+
+    .footer-ctn {
+     gap: 1rem;
     }
 
     .footer-disc {
@@ -144,7 +156,7 @@ span {
     }
 
     .col-2 span, .col-3 span {
-        font-size: 1.2rem;
+        font-size: 1rem;
         font-family: var(--lato);
         font-weight: 500;
     }
