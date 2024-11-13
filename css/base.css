@@ -4,7 +4,6 @@
 @import url('main-about.css');
 @import url('contact.css');
 @import url('footer.css');
-@import url('test.css');
 
 
 /* VARIABLES */
@@ -142,7 +141,7 @@ li.dropdown {
         width: 100%; /* Full width */
         background-color: var(--dark-brown);
         position: absolute;
-        top: 50px !important; /* Adjust based on your navbar height */
+        top: 200px !important; /* Adjust based on your navbar height */
         left: 0;
         padding: 1.5rem 2rem; /* Padding for the dropdown */
     }

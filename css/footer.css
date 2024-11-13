@@ -12,12 +12,11 @@ span {
 }
 
 .footer-ctn {
-    display: flex;
-    justify-content: space-between;
-    gap: 5rem;
+     display: flex;
+     justify-content: space-between;
+     align-items: stretch; /* Ensures columns occupy full height if needed */
+     gap: 2rem;
 }
-
-
 
 .col-1 {
     display: flex;
@@ -87,15 +86,26 @@ span {
     font-family: var(--nunito);
 }
 
+.footers-col {
+     display: flex;
+     gap: 1.5rem;
+}
+
+
 @media (max-width: 490px) {
     .foot-wrap {
         padding: 1rem;
     }
     .footer-ctn {
         flex-wrap: wrap;
-        max-width: fit-content;
-        gap: 2.3rem !important;
+        gap: 1.5vw !important;
     }
+
+    .footers-col {
+     gap: 3rem;
+     flex-grow: 1;
+    }
+
 
     .footer-title {
         font-size: 1.8rem !important;
@@ -132,7 +142,9 @@ span {
     .credits {
      font-size: 0.8rem;
     }
-
+    .col-1, .col-2, .col-3 {
+     flex-grow: 1; /* Lets each column grow to fill available space */
+ }
 }
 
 
