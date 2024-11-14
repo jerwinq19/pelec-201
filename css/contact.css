@@ -108,7 +108,7 @@
      }
  
      .myForm {
-          padding: 0.5rem;
+          padding: 1rem !important;
           background-color: rgba(255, 242, 215, 0.8);
           backdrop-filter: blur(10px); 
           border-radius: 10px; 
@@ -146,13 +146,15 @@
 
 }
  
-
-
 @media (max-width: 768px) {
 
      .contact-container {
           padding: 2.5rem 2.5rem;
-      }
+     }
+
+     .contact-details {
+          padding: 1rem;
+     }
 
      .contact-details p, .contact-details a {
           font-size: 16px;
@@ -176,6 +178,10 @@
      .form-img {
           max-width: 350px;
           height: auto;
+     }
+
+     .myForm {
+          padding: 0.5rem 1rem;
      }
 
 

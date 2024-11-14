@@ -1,0 +1,75 @@
+.top-container {
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat; /* Prevents the image from repeating */
+     height:85vh; /* Ensure container has height */
+}
+
+.container-title{
+     text-align: center;
+     font-family: var(--nunito);
+     font-weight: 400;
+     font-size: 3rem;
+     color: var(--light-brown);
+     margin: 0px;
+}
+
+.left-container {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     height: 75vh;
+     gap: 2rem;
+     padding: 3rem 3rem;
+}
+
+.right-container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 75vh;
+     gap: 2rem;
+     padding: 3rem 3rem;
+}
+
+.right-container > .text-container p {
+     color: var(--dark-brown);
+     line-height: 1.6; /* Improves readability */
+     float: right;
+}
+
+.right-container > .text-container h2 {
+     color: var(--dark-brown);
+     float: right;
+}
+
+.img-cheesy {
+     width: 800px;
+     height: auto;
+}
+
+.img-cheesy img {
+     max-width: 100%;
+     height: auto;
+}
+
+.text-container {
+     width: 75%;
+}
+
+.text-container h2 {
+     font-size: 2.5rem;
+     margin: 0px;
+}
+
+.text-container p {
+     margin: 0px;
+     font-size: 1rem;
+     line-height: 1.6; /* Improves readability */
+     width: 75%;
+}
+
+.text-container p, .text-container h2{
+     font-family: var(--nunito);
+     color: var(--light-brown);
+}
