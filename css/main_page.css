@@ -20,7 +20,7 @@
     font-weight: 700;
     background-color: var(--dark-brown);
     color: var(--light-brown);
-    transition: 0.3s ease;
+    border: 2px solid var(--dark-brown);
 }
 
 .container a:hover {
