@@ -102,8 +102,8 @@
          padding: 2rem 2rem;
      }
 
-     body {
-          background-image: url('../images/contacts-mobile-pic.png'); /* Adjust path if necessary */
+     .contact-body {
+          background-image: url('../images/contacts-mobile-pic.png');
           background-position: center;
      }
  
