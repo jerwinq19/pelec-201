@@ -1,14 +1,13 @@
-
-span {
-    color: var(--light-brown);
-}
-
 .foot-wrap {
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
     background-color: var(--dark-brown);
+}
+
+.foot-wrap span {
+     color: var(--light-brown);
 }
 
 .footer-ctn {
@@ -108,11 +107,11 @@ span {
 
 
     .footer-title {
-        font-size: 1.8rem !important;
+        font-size: 1.3rem !important;
     }
 
     .footer-disc {
-        font-size: 0.9rem !important;
+        font-size: 1rem !important;
     }
 
     .icons img, .icons a {
@@ -122,7 +121,7 @@ span {
      }
 
     .col-2 span, .col-3 span {
-        font-size: 1rem;
+        font-size: 0.8rem !important;
         font-family: var(--lato);
         font-weight: 500;
     }
@@ -130,9 +129,13 @@ span {
     .col-2 a, .col-3 a{
         color: var(--light-brown);
         text-decoration: none;
-        font-size: 1rem;
+        font-size: 0.8rem !important;
         font-family: var(--lato);
         font-weight: 400;
+    }
+
+    .col-2, .col-3{
+     gap: 0.5rem !important;
     }
 
     .hr-line {
@@ -167,7 +170,7 @@ span {
         height: 80%;
     }
 
-    .col-2 span, .col-3 span {
+    .col-2 span, .col-3 span{
         font-size: 1rem;
         font-family: var(--lato);
         font-weight: 500;

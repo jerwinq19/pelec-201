@@ -83,21 +83,19 @@
 }
 
 .mid-img {
-    max-width:20em;
+     width: 100%;
+    max-width:420px;
     height: auto;
 }
 
 .mid-img img {
-     margin: auto;
      max-width: 100%;
      height: auto;
-     
-
 }
 
 .middle p {
-    width: 60%;
-    font-size: 1.2rem;
+    width: 70%;
+    font-size: 24px;
     color: var(--dark-brown);
 }
 
@@ -105,6 +103,7 @@
     padding: 1rem 2rem;
     margin-left: 20%;
     margin-right: auto;
+    border: 2px solid var(--dark-brown);
 }
 
 
