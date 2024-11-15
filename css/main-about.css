@@ -8,7 +8,8 @@
 }
 
 .container-abt img {
-    width: 40%;
+    width: 100%;
+    max-width: 400px;
     height: auto;
     border: 3px solid var(--dark-brown);
     border-radius: 2rem;
@@ -34,6 +35,7 @@
 
 .about-content p {
     font-size: 1.3rem;
+    line-height: 1.6;
 }
 
 .about-content h2 {
@@ -72,14 +74,21 @@
 .team-ctn p {
     font-family: var(--nunito);
     font-size: 1.3rem;
+    line-height: 1.6;
+}
+
+.my-team-cont-img {
+     width: 100%;
+     max-width: 450px;
+     height: auto;
 }
 
 .team-cont img {
-    width: 100%;
-    height: auto;
-    border: 3px solid var(--light-brown);
-    border-radius: 2rem;
-    object-fit: contain;
+     width: 100%;
+     height: auto;
+     border: 3px solid var(--light-brown);
+     border-radius: 2rem;
+     object-fit: contain;
 }
 
 /* bottom */
@@ -92,7 +101,8 @@
 }
 
 .container-bot img {
-    width: 40%;
+    width: 100%;
+    max-width: 400px;
     height: auto;
     border: 3px solid var(--dark-brown);
     border-radius: 2rem;
@@ -116,21 +126,22 @@
 
 .local-disc p {
     font-size: 1.3rem;
+    line-height: 1.6;
+    /* margin-bottom: 10rem; */
 }
 
 /* Mobile responsive styling */
 @media (max-width: 480px) {
     .container-abt, .container-bot, .team-cont{
         flex-direction: column-reverse;
-        /* padding: 1rem 0rem; */
         gap: 0.5rem !important;
-        /* align-items: center; */
+        padding: 0.5rem 1.3rem !important;
     }
 
     .container-abt img,
-    .team-img img,
+    .my-team-cont-img img,
     .container-bot img {
-        width: 80% !important; /* Set width for mobile view */
+          border-radius: 1rem;
     }
 
     .about-content {
@@ -139,7 +150,7 @@
     }
 
     .about-content h1 {
-        font-size: 10vw !important;
+        font-size:10vw !important;
         margin: 0px;
     }
 
@@ -153,15 +164,19 @@
     }
 
     .team-ctn h2, .local-disc h2, .about-content h2{
-        font-size: 6vw !important;
+        font-size: 5.5vw !important;
+        width: 100%;
     }
 
     .team-ctn p, .local-disc p, .about-content p {
-        font-size: 5vw !important;
+        font-size: 4vw !important;
+        line-height: 1.3;
+        word-break: keep-all;
     }
 
-    .local-disc {
+    .local-disc p {
         width: 100%;
+        margin-bottom: 0px !important;
     }
 }
 
@@ -210,7 +225,9 @@
     }
 
     .team-ctn p, .local-disc p, .about-content p {
-        font-size: 3.2vw;
+        font-size: 3vw;
+        line-height: 1.6;
+        word-break: keep-all;
     }
 
     .container-bot {
