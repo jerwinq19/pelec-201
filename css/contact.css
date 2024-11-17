@@ -22,6 +22,11 @@
      justify-content: center;
      gap: 2rem;
      padding: 7vh 1vh;
+     background-image: url('../images/contact-page-bg.png');
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     z-index: -1;
 }
 
 .contact-details {
@@ -29,6 +34,7 @@
      flex-direction: column;
      justify-content: space-evenly;
      border: 2.5px solid var(--dark-brown);
+     background-color: var(--light-brown);
 }
 
 .cont-infos, .services-infos, .address-infos {
@@ -69,6 +75,7 @@
      width: 100%;
      padding: 1rem 3rem;
      border: 2.5px solid var(--dark-brown);
+     background-color: var(--light-brown);
 }
 
 .myForm input{
@@ -100,6 +107,7 @@
          display: flex;
          flex-direction: column-reverse;
          padding: 2rem 2rem;
+         background-image: none;
      }
 
      .contact-body {

@@ -6,7 +6,6 @@
 @import url('footer.css');
 @import url('snacks.css');
 @import url('caffeine.css');
-
 /* VARIABLES */
 :root {
     --light-brown: #FFF2D7;
@@ -126,12 +125,22 @@ li.dropdown {
 }
 
 .navbar-toggle span {
-    height: 4px;
-    width: 25px;
-    background-color: var(--dark-brown);
-    margin: 3px 0;
+     height: 4px;
+     width: 25px;
+     background-color: var(--dark-brown);
+     margin: 3px 0;
+     transition: 0.5s;
 }
 
+.change .bar1 {
+  transform: translate(0, 8px) rotate(-45deg);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  transform: translate(0, -10px) rotate(45deg);
+}
 
 /* Responsive Styles */
 @media (max-width: 480px) {

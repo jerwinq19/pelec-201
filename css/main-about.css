@@ -5,6 +5,10 @@
     align-items: center;
     gap: 2rem;
     padding: 3rem 2rem;
+    background-image: url('../images/mission-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .container-abt img {
@@ -36,6 +40,7 @@
 .about-content p {
     font-size: 1.3rem;
     line-height: 1.6;
+    text-align: justify;
 }
 
 .about-content h2 {
@@ -49,6 +54,10 @@
     align-items: center;
     padding: 1rem 2rem;
     background-color: var(--dark-brown);
+    background-image: url('../images/our-team-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .team-ctn {
@@ -75,6 +84,7 @@
     font-family: var(--nunito);
     font-size: 1.3rem;
     line-height: 1.6;
+    text-align: justify;
 }
 
 .my-team-cont-img {
@@ -98,6 +108,10 @@
     align-items: center;
     padding: 2rem 2rem;
     gap: 2rem;
+    background-image: url('../images/local-bg-image.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .container-bot img {
@@ -127,7 +141,7 @@
 .local-disc p {
     font-size: 1.3rem;
     line-height: 1.6;
-    /* margin-bottom: 10rem; */
+    text-align: justify;
 }
 
 /* Mobile responsive styling */

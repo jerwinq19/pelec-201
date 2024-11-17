@@ -4,7 +4,7 @@
     flex-direction: column;
     align-items: center;
     width: auto;
-    margin: 0rem 3rem;
+    margin: 1rem 3rem;
 
 }
 
@@ -83,6 +83,7 @@
 .middle {
     display: flex;
     justify-content: space-between;
+    gap: 2.5rem;
 }
 
 .mid-img {
@@ -97,10 +98,11 @@
 }
 
 .middle p {
-    width: 70%;
-    font-size: 1.3rem;
+    width: 65%;
+    font-size: 1.2rem;
     color: var(--dark-brown);
     line-height: 1.6;
+    text-align: justify;
 }
 
 .learn-more {
@@ -114,7 +116,7 @@
 @media (max-width: 500px) {
 
     .container {
-        margin: 0rem 1rem !important;
+        margin: 1rem 1rem !important;
     }
 
     .hero-ctn img {
@@ -150,6 +152,7 @@
     .middle {
         flex-direction: column-reverse;
         align-items: center;
+        gap: 0px !important;
     }
 
     .mid-img img {
@@ -174,7 +177,7 @@
 @media (max-width: 768px) {
 
     .container {
-        margin: 0rem 1rem !important;
+        margin: 1rem 1rem;
     }
 
     .hero-ctn {

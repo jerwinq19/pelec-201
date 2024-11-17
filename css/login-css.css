@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+    --light-brown: #FFF2D7;
+    --dark-brown: #603F26;
+    --yellow: #FFD700; /* Added a value for yellow */
+    --abril: "Abril Fatface", serif;
+    --nunito: "Nunito", sans-serif; /* Changed serif to sans-serif for Nunito */
+    --lato: "Lato", sans-serif; /* Changed serif to sans-serif for Lato */
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: var(--nunito); /* Set a default font-family */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh; /* Ensures the container takes the full viewport height */
+}
+
+.container-img {
+     display: block;
+    width: 60%; 
+    height: auto;
+    overflow: hidden;
+}
+
+.container-img img {
+     display: block;
+     max-width: 600px;
+     max-height: 6000px;
+    object-fit: contain;
+}
+
+.form-container {
+    width: 50%; /* Matches the container-img for balanced layout */
+    padding: 3vw 5vw;
+    color: var(--dark-brown);
+    background-color: var(--light-brown);
+}
+
+.form-container h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 0;
+}
+
+.form-container p {
+    font-size: 1rem;
+    text-align: justify;
+    margin: 0.5rem 0;
+}
+
+.form-container form {
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.my-form label {
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+.my-form input {
+    padding: 1rem;
+    border: 3px solid var(--dark-brown);
+    background-color: var(--light-brown);
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+.email-input {
+     background-image: url('/images/at-email.svg');
+     background-position: 98% 6px; 
+     background-repeat: no-repeat;
+}
+
+.password-input {
+     background-image: url('/images/lock-on.svg');
+     background-position: 98% 6px; 
+     background-repeat: no-repeat;
+}
+
+.my-form button {
+    padding: 1rem 0.5rem;
+    font-weight: 800;
+    background-color: var(--dark-brown);
+    border: 2px solid var(--dark-brown);
+    color: var(--light-brown);
+    font-family: var(--nunito);
+    font-size: 1.3rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+    cursor: pointer; 
+}
+
+/* .my-form button:hover {
+    background-color: var(--yellow); 
+    color: var(--dark-brown);
+} */
+
+.inline-remember {
+     display: inline-flex;
+     justify-content: space-between;
+}
+
+.inline-remember {
+    margin: 0.5rem 0;
+}
+
+.inline-remember a {
+    text-decoration: none;
+    color: var(--dark-brown);
+    font-weight: 600; /* Make links slightly bolder */
+}
+
+.line {
+    border: 1.5px solid var(--dark-brown);
+    margin: 1rem 0; /* Adds spacing around the line */
+}
+
+.register-span {
+    margin-top: 0rem;
+    text-align: center; /* Center-align register span content */
+}
+
+.register-span a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 700; /* Make links stand out */
+}
+
+@media (max-width: 490px) {
+    .container-img, .container-img img {
+        display: none; /* Hides the image on small screens */
+    }
+
+    .form-container {
+        width: 100%; /* Expand form-container to full width */
+        padding: 5vw; /* Adjust padding for smaller screens */
+    }
+
+    .form-text
+
+    .form-container h1 {
+     font-size: 2.5rem;
+    }
+}
