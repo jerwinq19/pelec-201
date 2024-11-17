@@ -1,0 +1,93 @@
+.grid-container {
+     display: grid;
+     grid-template-columns: repeat(3, 2fr); /* Creates two equal-width columns */
+     gap: 2rem; /* Adds space between grid items */
+     padding: 2rem 3rem; /* Adds space around the grid */
+}
+
+.flip-card {
+     background-color: var(--dark-brown);
+     padding: 2rem 2rem;
+     width: 100%;
+     height: 610px;
+     border: 2px solid var(--light-brown);
+     font-family: var(--nunito);
+}
+
+.flip-card h1 {
+     font-weight: 800;
+}
+
+.flip-inner {
+     position: relative;
+     width: 100%;
+     height: auto;
+     text-align: center;
+     transition: transform 0.7s;
+     transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-inner {
+     transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-front, .flip-back {
+     position: absolute;
+     width: 100%;
+     height: auto;
+     -webkit-backface-visibility: hidden; /* Safari */
+     backface-visibility: hidden;
+}
+
+.flip-front {
+     background-color: var(--dark-brown);
+     color: var(--light-brown);
+}
+
+.flip-back {
+     color: var(--light-brown);
+     transform: rotateY(180deg);
+     text-align: justify;
+     line-height: 1.5;
+}
+
+@media (max-width: 500px) {
+     .grid-container {
+          gap: 1rem; 
+          padding: 1rem;
+          grid-template-columns: 1fr !important;
+     }
+
+     .flip-back {
+          line-height: 1.2;
+          font-size: 4vw;
+     }
+
+     .flip-back h1 {
+          width: 100%;
+          font-size: 2rem;
+          text-align: justify;
+     }
+
+     .prod-disc p{
+          font-size: 0.8rem;
+     }
+
+     .prod-disc h1 {
+          font-size: 1.5rem;
+          margin: 0.5px;
+     }
+
+
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+     .grid-container {
+          grid-template-columns: 2fr 2fr; 
+     }
+     .prod-card {
+          width: 100%;
+     }
+}
