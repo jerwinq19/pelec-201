@@ -72,7 +72,7 @@
 
      .flip-back h1 {
           width: 100%;
-          font-size: 2rem;
+          font-size: 1.5rem !important;
           text-align: justify;
      }
 
@@ -86,12 +86,6 @@
           text-align: center;
      }
 
-     .flip-back h1 {
-          font-size: 1.5rem;
-          text-align: justify;
-     }
-
-
 }
 
 /* Media query for smaller screens */
@@ -101,5 +95,32 @@
      }
      .prod-card {
           width: 100%;
+     }
+
+
+     .flip-back p{
+          line-height: 1.2;
+          font-size: 15px !important;
+          text-align: justify;
+     }
+
+     .flip-card {
+          height: 85vh !important;
+     }
+
+     .flip-back h1 {
+          width: 100%;
+          font-size: 32px !important;
+          text-align: justify;
+     }
+
+     .prod-disc p{
+          font-size: 18px !important ;
+          text-align: justify;
+     }
+
+     .prod-disc h1 {
+          font-size: 1.5rem;
+          text-align: center;
      }
 }
