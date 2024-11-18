@@ -1,0 +1,124 @@
+/* Importing Google Font - Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+} */
+
+
+
+.slider-wrapper {
+  overflow: hidden;
+  max-width: 1200px;
+  margin: 0 70px 55px;
+}
+
+.tite {
+     background-image: url('/images/testimonials-bg.png');
+     background-repeat: no-repeat;
+     background-position: center;
+}
+
+#myCtn {
+     display: flex;
+     justify-content: space-evenly;
+}
+
+#myCtn h2{
+     font-size: 1.5rem;
+     margin: 0px;
+     text-align: start;
+     font-family: var(--nunito);
+     font-weight: 800;
+     color: var(--light-brown);
+}
+
+#myCtn p {
+     text-align: justify;
+     color: var(--light-brown);
+}
+
+
+.card-list .card-item {
+     width: 100%;
+     height: auto;
+     color: #fff;
+     user-select: none;
+     padding: 35px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     border-radius: 10px;
+     backdrop-filter: blur(30px);
+     background: #6C4E31;
+     border: 1px solid rgba(255, 0, 0, 0.5);
+}
+
+.user-image {
+     width: 100%;
+     margin-bottom: 2rem;
+     height: auto;
+}
+
+.card-list .card-item{
+  width: 100%;
+  height: auto;
+  margin-bottom: 40px;
+  border: 3px solid #fff;
+  padding: 2rem;
+}
+
+.card-list .card-item .user-profession {
+  font-size: 1.15rem;
+  color: #e3e3e3;
+  font-weight: 500;
+  margin: 14px 0 40px;
+}
+
+.card-list .card-item .message-button {
+  font-size: 1.25rem;
+  padding: 10px 35px;
+  color: #030728;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid transparent;
+  transition: 0.2s ease;
+}
+
+
+.slider-wrapper .swiper-pagination-bullet {
+  background: var(--dark-brown);
+  height: 13px;
+  width: 13px;
+  opacity: 0.5;
+}
+
+.slider-wrapper .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+.slider-wrapper .swiper-slide-button {
+  color: var(--dark-brown);
+  margin-top: -55px;
+  transition: 0.2s ease;
+}
+
+.slider-wrapper .swiper-slide-button:hover {
+  color: #4658ff;
+}
+
+@media (max-width: 768px) {
+  .slider-wrapper {
+    margin: 0 10px 40px;
+  }
+
+  .slider-wrapper .swiper-slide-button {
+    display: none;
+  }
+}

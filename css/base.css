@@ -6,6 +6,8 @@
 @import url('footer.css');
 @import url('snacks.css');
 @import url('caffeine.css');
+@import url('testimonials.css');
+
 /* VARIABLES */
 :root {
     --light-brown: #FFF2D7;

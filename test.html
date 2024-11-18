@@ -1,48 +1,37 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card Slider HTML and CSS | CodingNepal</title>
+  <!-- Linking SwiperJS CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container swiper">
+    <div class="slider-wrapper">
+      <div class="card-list swiper-wrapper">
 
-          <!--  -->
-          <div class="prod-card">
-               <img src="/images/kofi-sundae.png" alt="" width="100%">
-               <div class="prod-disc">
-                    <h1>COFFEE SUNDAÉ</h1>
-                    <p>Indulge in our Coffee Sundae—rich coffee ice cream, whipped cream, and chocolate drizzle. A perfect treat for coffee and dessert lovers!
-                    </p>
-               </div>
-          </div>
+        <div class="card-item swiper-slide">
+          <img src="images/img-1.jpg" alt="User Image" class="user-image">
+          <h2 class="user-name">James Wilson</h2>
+          <p class="user-profession">Software Developer</p>
+          <button class="message-button">Message</button>
+        </div>
 
-          <!--  -->
-          <div class="prod-card">
-               <img src="/images/frape-latte.png" alt="" width="100%">
-               <div class="prod-disc">
-                    <h1>FRAPPE LATTE</h1>
-                    <p>Cool down with our Frappe Latte—rich espresso, creamy milk, and icy refreshment. Topped with whipped cream, it’s the perfect anytime treat!
-                    </p>
-               </div>
-          </div>
-          <!--  -->
-          <div class="prod-card">
-               <img src="/images/cafe late.png" alt="" width="100%">
-               <div class="prod-disc">
-                    <h1>CAFFÉ LATTE</h1>
-                    <p>Savor the bliss of our Caffè Latte—rich espresso blended with creamy steamed milk. A warm, comforting treat for your perfect escape!
-                    </p>
-               </div>
-          </div>
-          <!--  -->
-          <div class="prod-card">
-               <img src="/images/milo-dinasaur.png" alt="" width="100%">
-               <div class="prod-disc">
-                    <h1>MILO DINOSAUR</h1>
-                    <p>The Milo dinosaur is a cold, creamy Milo drink topped with a generous layer of crushed Milo powder, offering a rich, chocolatey flavor and a refreshing, indulgent treat.
-                    </p>
-               </div>
-          </div>
-          <!--  -->
-          <div class="prod-card">
-               <img src="/images/mango-graham-drink .png" alt="" width="100%">
-               <div class="prod-disc">
-                    <h1>MANGO CRUNCH BLISS</h1>
-                    <p>
-                         This refreshing mango milkshake blends creamy milk and sweet, ripe mangoes, complemented by crunchy graham crackers for added texture. Topped with vibrant mango cubes, it offers a perfect balance of smoothness and crunch in every sip.
-                    </p>
-               </div>
-          </div>
+
+      <div class="swiper-pagination"></div>
+      <div class="swiper-slide-button swiper-button-prev"></div>
+      <div class="swiper-slide-button swiper-button-next"></div>
+    </div>
+  </div>
+
+  <!-- Linking SwiperJS script -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Linking custom script -->
+  <script src="script.js"></script>
+</body>
+</html>
