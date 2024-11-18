@@ -67,9 +67,8 @@
      }
 
      .flip-card {
-          height: 80vh;
+          height: 85vh !important;
      }
-
 
      .flip-back h1 {
           width: 100%;
@@ -78,7 +77,7 @@
      }
 
      .prod-disc p{
-          font-size: 4vw;
+          font-size: 4.5vw ;
           text-align: justify;
      }
 
