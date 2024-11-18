@@ -55,7 +55,6 @@
      border-radius: 10px;
      backdrop-filter: blur(30px);
      background: #6C4E31;
-     border: 1px solid rgba(255, 0, 0, 0.5);
 }
 
 .user-image {
@@ -68,7 +67,7 @@
   width: 100%;
   height: auto;
   margin-bottom: 40px;
-  border: 3px solid #fff;
+  border: 3px solid ;
   padding: 2rem;
 }
 
@@ -76,20 +75,9 @@
   font-size: 1.15rem;
   color: #e3e3e3;
   font-weight: 500;
-  margin: 14px 0 40px;
+  /* margin: 14px 0 40px; */
 }
 
-.card-list .card-item .message-button {
-  font-size: 1.25rem;
-  padding: 10px 35px;
-  color: #030728;
-  border-radius: 6px;
-  font-weight: 500;
-  cursor: pointer;
-  background: #fff;
-  border: 1px solid transparent;
-  transition: 0.2s ease;
-}
 
 
 .slider-wrapper .swiper-pagination-bullet {
@@ -110,7 +98,7 @@
 }
 
 .slider-wrapper .swiper-slide-button:hover {
-  color: #4658ff;
+  color: var(--light-brown);
 }
 
 @media (max-width: 768px) {
