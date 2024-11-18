@@ -60,10 +60,16 @@
           grid-template-columns: 1fr !important;
      }
 
-     .flip-back {
+     .flip-back p{
           line-height: 1.2;
           font-size: 4vw;
+          text-align: justify;
      }
+
+     .flip-card {
+          height: 80vh;
+     }
+
 
      .flip-back h1 {
           width: 100%;
@@ -72,12 +78,18 @@
      }
 
      .prod-disc p{
-          font-size: 1rem;
+          font-size: 4vw;
+          text-align: justify;
      }
 
      .prod-disc h1 {
           font-size: 1.5rem;
-          margin: 0.5px;
+          text-align: center;
+     }
+
+     .flip-back h1 {
+          font-size: 1.5rem;
+          text-align: justify;
      }
 
 
