@@ -41,9 +41,17 @@
      color: var(--light-brown);
 }
 
+.top-title {
+     margin: 0px;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     gap: 0px;
+     font-size: 0px;
+}
+
 
 .card-list .card-item {
-     width: 100%;
      height: auto;
      color: #fff;
      user-select: none;

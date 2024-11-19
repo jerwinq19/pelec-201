@@ -4,7 +4,6 @@
 @import url('main-about.css');
 @import url('contact.css');
 @import url('footer.css');
-@import url('snacks.css');
 @import url('caffeine.css');
 @import url('testimonials.css');
 
@@ -68,7 +67,7 @@ body {
     list-style: none;
 }
 
-.buttons a {
+.buttons a , .dropbtn{
     text-decoration: none;
     color: var(--dark-brown);
     font-family: var(--nunito);
@@ -77,7 +76,9 @@ body {
     position: relative;
 }
 
-.buttons a:not(.no-animation):before {
+/* Style for links and buttons */
+.buttons a:not(.no-animation)::before,
+.dropbtn::before {
     content: "";
     position: absolute;
     bottom: -2px;
@@ -89,7 +90,9 @@ body {
     transition: transform 0.2s linear;
 }
 
-.buttons a:hover:before {
+/* Hover effect for links and dropdown button */
+.buttons a:hover::before,
+.dropbtn:hover::before {
     transform: scaleX(1);
 }
 
@@ -98,14 +101,23 @@ li.dropdown {
     position: relative; /* Ensure dropdown positioning */
 }
 
+.dropbtn {
+     position: relative;
+     z-index: 2; /* Adjust as needed */
+     background-color: var(--light-brown);
+     border: none;
+}
+
 .drop-down-cnt {
-    display: none;
-    position: absolute;
-    background-color: var(--light-brown);
-    top: 100%; /* Position just below the dropdown button */
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+     display: none;
+     position: absolute;
+     background-color: var(--light-brown);
+     min-width: 160px;
+     z-index: 1;
+}
+
+.drop-down-cnt.show {
+     display: block;
 }
 
 .drop-down-cnt a {
@@ -116,9 +128,7 @@ li.dropdown {
     text-align: left;
 }
 
-.dropdown:hover .drop-down-cnt {
-    display: block;
-}
+
 /* Navbar Toggle */
 .navbar-toggle {
     display: none; /* Hide toggle by default */
@@ -145,8 +155,8 @@ li.dropdown {
 }
 
 /* Responsive Styles */
-@media (max-width: 480px) {
-    .buttons ul {
+@media (max-width: 488px) {
+    .buttons ul{
         display: none; /* Hide buttons on small screens */
         flex-direction: column; /* Stack vertically */
         align-items: flex-start;
@@ -179,6 +189,11 @@ li.dropdown {
 
     .buttons a {
         color: var(--light-brown);
+    }
+
+    .dropbtn {
+     background-color: var(--dark-brown);
+     color: var(--light-brown);
     }
 
     .logo a {
@@ -222,6 +237,11 @@ li.dropdown {
 
     .buttons a {
         color: var(--light-brown);
+    }
+
+    .dropbtn {
+          background-color: var(--dark-brown);
+          color: var(--light-brown);
     }
 
     .logo a {
